@@ -12,11 +12,48 @@ title: Research
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
 
+	* {
+	  box-sizing: border-box;
+	}
+	
 
+	figure {
+	  display: inline-block;
+	  text-align: center;
+	}  
+	  
+	figure figcaption {
+	    text-align: center;
+	}
+	
+
+	
+
+	/* Create two equal columns that floats next to each other */
+	.column {
+	  float: left;
+	  width: 33%;
+	  padding: 10px;
+	}
+	
+
+	.column img {
+	  margin-top: 12px;
+	}
+	
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* NOW GRID */
 
 .grid {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   grid-gap: 10px;
