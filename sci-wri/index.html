@@ -3,45 +3,34 @@ layout: default
 title: Sci-Wri 
 ---
 <!DOCTYPE html>
-<html>
-<head>
-<style>
+
  
-  $(function() { 
-    var videos  = $(".video");
+<html> 
+<head> 
+	<title>HTML video poster Attribute</title> 
+</head> 
 
-        videos.on("click", function(){
-            var elm = $(this),
-                conts   = elm.contents(),
-                le      = conts.length,
-                ifr     = null;
+<body> 
+	<center> 
+		<h1 style="color:green;">GeeksforGeeks</h1> 
 
-            for(var i = 0; i<le; i++){
-              if(conts[i].nodeType == 8) ifr = conts[i].textContent;
-            }
+		<h3>HTML video poster Attribute</h3> 
 
-            elm.addClass("player").html(ifr);
-            elm.off("click");
-        });
-});
- 
-</style>
-</head>
+		<video width="400" height="200" controls poster= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20190627130930/a218.png"> 
+			<source src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4"
+															type="video/mp4"> 
+			<source src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.ogg"
+															type="video/ogg"> 
+   
+   
+   <!-- <iframe width="560" height="315" poster="video-preview.jpg" src="https://www.youtube.com/embed/jih2YGyLUsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-<body>
+   
+		</video> 
+	</center> 
+</body> 
 
-
-
-<h1 style="text-align:center;font-family:optima;margin-bottom:0.0em"> Under Construction </h1>
- 
- <p> Function?  </p>
- 
-<!-- <iframe width="560" height="315" poster="video-preview.jpg" src="https://www.youtube.com/embed/jih2YGyLUsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-  
-<div class="video">
-    <img src="video-preview.jpg">
-       <!--   <iframe width="560" height="315" src="https://www.youtube.com/embed/jih2YGyLUsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>. -->
-</div>
-
-</body>
-</html>
+</html> 
