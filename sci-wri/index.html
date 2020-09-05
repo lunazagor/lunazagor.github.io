@@ -11,19 +11,13 @@ title: Sci-Wri
 </head> 
 
 <body> 
-	<center> 
-		<h1 style="color:green;">Testing</h1> 
-
-		<h3>HTML video poster Attribute</h3> 
-		
-		<video width="400" height="200" controls poster= "video-preview.jpg"> 
-		<iframe width="560" height="315" poster="video-preview.jpg" src="https://www.youtube.com/embed/jih2YGyLUsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-		<!-- <video width="400" height="200" controls poster= "video-preview.jpg"> 
-			<source src= "https://www.youtube.com/embed/jih2YGyLUsg" type="video/mp4"> -->
-		<!--	<source src= "https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.ogg" type="video/ogg"> -->
-		</video> 
-	</center>    
+	
+<div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+   <img src="my_thumbnail.png" style="cursor:pointer" />
+</div>
+<div style="display:none">
+   <iframe width="560" height="315" poster="video-preview.jpg" src="https://www.youtube.com/embed/jih2YGyLUsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> 
    
    <!-- <iframe width="560" height="315" poster="video-preview.jpg" src="https://www.youtube.com/embed/jih2YGyLUsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
