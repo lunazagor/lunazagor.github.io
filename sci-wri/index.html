@@ -7,45 +7,14 @@ title: Sci-Wri
  
 <html> 
 <head> 
-	<style>
-	.video { position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0; }
-	.video img { position: absolute; display: block; top: 0; left: 0; width: 100%; height: 100%; z-index: 20; cursor: pointer; }
-	.video:after { content: ""; position: absolute; display: block; 
-	    background: url(play-button.png) no-repeat 0 0; 
-	    top: 45%; left: 45%; width: 46px; height: 36px; z-index: 30; cursor: pointer; } 
-	.video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-	/* image poster clicked, player class added using js */
-	.video.player img { display: none; }
-	.video.player:after { display: none; }
-	</style>
+	<title style="text-align:center;font-family:optima;margin-bottom:0.0em"> Under Construction </h1>
 		
-	<script>
-	$(function() { 
-	    var videos  = $(".video");
-
-		videos.on("click", function(){
-		    var elm = $(this),
-			conts   = elm.contents(),
-			le      = conts.length,
-			ifr     = null;
-
-		    for(var i = 0; i<le; i++){
-		      if(conts[i].nodeType == 8) ifr = conts[i].textContent;
-		    }
-
-		    elm.addClass("player").html(ifr);
-		    elm.off("click");
-		});
-	});
-	</script>	
-		
-	<title>HTML video poster Attribute</title> 
 </head> 
 
 <body> 
 	
-<h1> Autoplay attempt </h1>	
+<h1 style="text-align:center;font-family:optima;margin-bottom:0.0em"> Under Construction (2) </h1>
 	
 <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
    <img src="video-preview.jpg" width="560" height="315" style="cursor:pointer" />
@@ -55,32 +24,7 @@ title: Sci-Wri
 </div> 
    
 	
-	<h1>  Newest try</h1>	
 	
-	
-	<div class="image"> 
-		<div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'"> 
-			<img class="thumb" style="cursor: pointer;" src="video-preview.jpg" alt="" /> 
-		</div> 
-		<div id="thevideo" style="display: none;"> 
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/jih2YGyLUsg" 
-				frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-			<!--INSERT EMBED CODE FROM YOUTUBE] -->
-		</div>
-	</div>
-	
-	
-	
-	
-	
-   <!-- <iframe width="560" height="315" poster="video-preview.jpg" src="https://www.youtube.com/embed/jih2YGyLUsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-
-	<h1> Reloaded </h1>
-
-	<div class="video">
-    	<img src="video-preview.jpg" width="940" height="529">
-    	<iframe width="940" height="529" src="http://www.youtube.com/embed/rRoy6I4gKWU?autoplay=1" frameborder="0" allowfullscreen></iframe>
-	</div>
 
 </body> 
 
