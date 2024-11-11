@@ -22,6 +22,12 @@ title: Media
           font-size: 22px;
           line-height: 1.5;
       }
+
+      .quote-container {
+	width: 60%;  /* Set the desired width */
+	margin: 0 auto;
+      }
+	  
       .quote {
           text-align: center;
           font-style: italic;
@@ -31,22 +37,23 @@ title: Media
           text-align: right;
           font-size: 18px;
       }
-      .courses {
-          display: flex;
-          justify-content: space-between;
-          padding-bottom: 0px;
-          padding-top: 0px;
-      }
-      .course-list {
-          width: 40%;
-          font-size: 22px;
-          list-style: none;
-          padding-left: 0;
-          padding-bottom: 0px;
-      }
-      .course-list li {
-          margin-bottom: 0.1em;
-      }
+	.image-list-container {
+		display: flex;
+		align-items: flex-start;
+		gap: 20px; /* Adjusts space between image and list */
+	}
+	.image-list-container img {
+		max-width: 150px; /* Set desired max width */
+		height: auto;
+		margin-top: 10px; /* Adjusts space at the top */
+	}
+	.image-list-container ul {
+		text-align: left;
+		font-size: 22px;
+		margin: 0; /* Removes default list margin */
+		padding-left: 0; /* Removes padding for better alignment */
+		list-style-position: inside; /* Ensures bullets are inside the list container */
+	}
       .section {
           margin-bottom: 0.0em;
       }
@@ -71,23 +78,25 @@ title: Media
 
     <h1> Media </h1>
 
+<div class="quote-container">	
     <p class="quote">“If you don't turn your life into a story, you just become a part of someone else's story.”</p>
     <p class="quote-author">― Terry Pratchett, The Amazing Maurice and His Educated Rodents</p>
-
+</div>
   
   <div class="section">
           <p> Check out this page for updates on media related to me and my work. </p>
           <p> I'm always keen to share my work and interests through scicomm and teaching, so if you need a speaker, a podcast guest, a Ms. Frizzle, or just want to know why WIMPs are like horses and modified gravity is like zebras, feel free to reach out by clicking ``Email me!" below. </p>
   </div>
 
-  <div class="section">
-  <img class="TextWrapLeft" src="pyramid_of_stars.jpeg" width="auto" height="auto" style="cursor:pointe;vertical-align:middle;margin:30px"/>  
-    <ul style="text-align:left;font-size:22px">
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
-    </ul>	
-  </div>
+<div class="image-list-container">
+	<img src="pyramid_of_stars.jpeg" alt="Pyramid of Stars">
+	<ul>
+		<li>First item</li>
+		<li>Second item</li>
+		<li>Third item</li>
+		<li>Fourth item</li>
+	</ul>
+</div>
 
 </body>
 </html>
